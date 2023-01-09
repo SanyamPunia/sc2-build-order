@@ -4,7 +4,7 @@ import { api } from "../utils/api";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 
-const Home: NextPage = () => {
+const SubmitBuildPage: NextPage = () => {
   const createBuildMutation = api.builds.createBuild.useMutation();
 
   const [matchUp, setMatchUp] = useState("");
@@ -65,4 +65,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default SubmitBuildPage;
